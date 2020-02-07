@@ -17,10 +17,21 @@ public class Test {
 
         User[] users = {man1, man2, woman1, woman2};
 
+
         User.serializeUser(man1);
+        User deserializeUser1 = User.deserializeUser();
+        deserializeUser1.printInfo();
 
-        User u = User.deserializeUser();
+        User.serializeUser(man2);
+        User deserializeUser2 = User.deserializeUser();
+        deserializeUser2.printInfo();
 
-        u.printInfo();
+        User.serializeUser(woman1);
+        User deserializeUser3 = User.deserializeUser();
+        deserializeUser3.printInfo();
+
+        User.serializeUser(woman2);
+        User deserializeUser4 = User.deserializeUser();
+        deserializeUser4.printInfo();
     }
 }
