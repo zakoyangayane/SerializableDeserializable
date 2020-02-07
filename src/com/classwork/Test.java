@@ -19,19 +19,19 @@ public class Test {
 
 
         User.serializeUser(man1);
-        User deserializeUser1 = User.deserializeUser();
+        User deserializeUser1 = User.deSerializeUser();
         deserializeUser1.printInfo();
 
         User.serializeUser(man2);
-        User deserializeUser2 = User.deserializeUser();
+        User deserializeUser2 = User.deSerializeUser();
         deserializeUser2.printInfo();
 
         User.serializeUser(woman1);
-        User deserializeUser3 = User.deserializeUser();
+        User deserializeUser3 = User.deSerializeUser();
         deserializeUser3.printInfo();
 
         User.serializeUser(woman2);
-        User deserializeUser4 = User.deserializeUser();
+        User deserializeUser4 = User.deSerializeUser();
         deserializeUser4.printInfo();
     }
 }

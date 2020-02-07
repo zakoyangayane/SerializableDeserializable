@@ -101,13 +101,13 @@ public class User implements Serializable {
             objectOutputStream.writeObject(user);
             objectOutputStream.close();
             fileOutputStream.close();
-            System.out.println("already saved");
+            System.out.println("already serialized");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public static User deserializeUser() {
+    public static User deSerializeUser() {
         User user = null;
         try {
             FileInputStream fileInputStream = new FileInputStream("users.ser");
@@ -115,6 +115,7 @@ public class User implements Serializable {
             user = (User) objectInputStream.readObject();
             objectInputStream.close();
             fileInputStream.close();
+            System.out.println("already deSerialized");
         } catch (IOException i) {
             i.printStackTrace();
         } catch (ClassNotFoundException c) {
