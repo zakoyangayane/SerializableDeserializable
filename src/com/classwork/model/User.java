@@ -131,7 +131,7 @@ public class User implements Serializable {
         System.out.println("phone - " + phone);
         System.out.println("servedInArmy - " + servedInArmy);
         System.out.println("password - " + password);
-        System.out.println("adress - city: " + address.city + ", street: " + address.street);
+        System.out.println("address - city: " + address.city + ", street: " + address.street);
         System.out.println("---------------------------");
     }
 }
